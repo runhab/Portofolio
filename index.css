@@ -27,15 +27,15 @@ p {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/men.jfif);
+    /* background-image: url(images/men.jfif); */
+    background-color: #020102;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 0;
-    /* background-size: 35% ; */
-    /* background-position: right;
-  background-position-x: 90%; */
+    
 }
+
 
 .container {
     padding: 10px 10%;
@@ -81,11 +81,12 @@ a:hover {
 }
 
 .navbar .logo a {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: bold;
 }
 
 .navbar .links {
+    margin-right: 5%;
     display: flex;
     /* justify-content:space-between; */
     gap: 2rem;
@@ -97,7 +98,9 @@ a:hover {
     cursor: pointer;
     display: none;
 }
-
+.menuimg{
+    width: 30px;
+}
 /* dropdown */
 .dropdown_menu {
     display: none;
@@ -137,17 +140,30 @@ a:hover {
     position: absolute;
     left: 0;
     bottom: -3px;
-    /* Position at the bottom of the list item */
     transition: width 0.5s ease;
     transform: scaleX(0);
-    /* Initially hidden */
     transform-origin: bottom left;
-    /* Set origin to bottom left for expansion effect */
+  
 }
 
 .headerpart .navbar ul li:hover::after {
     transform: scaleX(1);
-    /* Expand to full width on hover */
+}
+.namecontainer{
+    display: flex;
+    flex-direction: row;
+    padding-top: 6rem;
+}
+.headerimg{
+    padding-top: 5rem;
+    padding-left: 20%;
+    padding-right: 5%;
+}
+.headerimage {
+    width: 350px;
+    height: 350px;
+    
+    border-radius: 50%;
 }
 /* =========================navigation================== */
 .header-text {
@@ -156,6 +172,7 @@ a:hover {
     padding-left: 5%;  
     margin-top: 0;
     font-size: 30px;
+    
 }
 
 .header-text h1 {
@@ -167,13 +184,25 @@ a:hover {
     font-size: 30px;
 
 }
-
+.sociallinks{
+    margin-top: 20px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.socialmedialinks{
+    width: 30px;
+}
 
 /* =============================ABOUT=============================== */
 #about {
     padding: 80px 0;
     color: #ababab;
     background-color: #31363F;
+}
+#about p{
+    line-height: 25px;
 }
 
 .about-container {
@@ -206,7 +235,7 @@ a:hover {
 }
 
 .info {
-    line-height: 35px;
+    line-height: 27px;
 }
 
 .mine {
@@ -229,56 +258,64 @@ a:hover {
 }
 
 /* =============================SKILL=============================== */
-#skill {
-    background-color: #31363f;
+#skill{
+    background-color: #20232f;
+    height: auto;
+    /* padding-bottom: 30px; */
 }
-
-.skills {
-    border: 2px solid black;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    border-radius: 40px 0 40px 0;
-    padding: 20px;
+#skill .title{
+    margin-bottom: 25px;
 }
-
-.skills h3 {
-    margin-bottom: 15px;
+.skilltitle{
+    text-align: center;
+    margin-top:25px;
+    margin-bottom: 35px;
 }
-
 .avatorimage {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+.titleimg{
+    display: flex;
+    justify-content: center;
+}
+.titleimage{
     width: 60px;
     height: 60px;
     border-radius: 30px;
+    align-self: center;
 }
-
-.tools {
+.skillgroups{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 25px;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    gap: 20px;
 }
-
-.items {
+.skillcard{
+    width: 290px;
+    height: auto;
+    background-color: #323744;
+    padding: 20px;
+    border-radius: 20px;
+}
+.skillcard:hover{
+    width: 295px;
+    background-color: black;
+}
+.skilllists{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: center;
 }
-
-.row {
+.list{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
+    align-items: center;
+    gap: 15px;
 }
-
-.skill-container h2 {
-    /* margin-top: 35px; */
-    margin-bottom: 20px;
-}
-
 /* =============================Projects=============================== */
 #project {
     background-color: #31363F;
@@ -363,9 +400,7 @@ a:hover {
 
 }
 
-.edu-title {
-    color: black;
-}
+
 
 .edu-lists {
     display: flex;
@@ -428,7 +463,7 @@ a:hover {
 
 /* ==================================================CONTACT============================ */
 #contact {
-    background-color: #2e2e2e;
+    background-color: #0b0f1f;
     padding-top: 40px;
     padding-bottom: 30px;
 }
@@ -449,8 +484,9 @@ a:hover {
 
 .getme {
     padding-top: 15px;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: normal;
     padding-bottom: 20px;
 }
 
@@ -480,15 +516,18 @@ a:hover {
 }
 
 .sendme h3 {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
+    
 }
 
 input {
     width: 250px;
+    height: 30px;
+    
 }
 
 #inputmessage {
-    height: 40px;
+    height: 60px;
     padding-bottom: 20px;
 
 }
@@ -498,7 +537,7 @@ button {
     border-radius: 7px;
     border: 1px solid black;
     align-self: end;
-    background-color: #01d1ff;
+    background-color: #002830;
     color: black;
 }
 
@@ -558,26 +597,42 @@ button {
         width: 440px;
 
     }
-        .navbar .links {
-            display: none;
-        }
+     .navbar .links {
+        display: none;
+     }
     
-        .navbar .toggle_btn {
-            display: block;
-        }
+     .navbar .toggle_btn {
+         display: block;
+     }
     
-        .dropdown_menu {
-            display: block;
-        }
+     .dropdown_menu {
+        display: block;
+    }
 
     
    
 } 
 
-@media (max-width:992px) {
-    
+@media (max-width:1082px) {
+    .headerimage {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+     .headerimg {
+        padding-top: 5rem;
+        padding-left: 10%;
+        padding-right: 3%;
+        align-content: center;
+     }
+
 }
 
+@media (max-width:719px) {
+    .headerimage {
+        display: none;
+        }
+}
 @media (max-width:576px) {
     .dropdown_menu {
         left: 2rem;
@@ -585,6 +640,3 @@ button {
     }
 }
 
- /* nav ul {
-       display: none;
-     } */
