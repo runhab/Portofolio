@@ -4,14 +4,10 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-
-/* #ededed */
 body {
     background: #537168;
-    color: #fff;
-    
+    color: #fff; 
 }
-
 p {
     font-size: 16px;
 }
@@ -27,7 +23,6 @@ p {
 #header {
     width: 100%;
     height: 100vh;
-    /* background-image: url(images/men.jfif); */
     background-color: #020102;
     background-size: cover;
     background-position: center;
@@ -35,7 +30,6 @@ p {
     margin-top: 0;
     
 }
-
 
 .container {
     padding: 10px 10%;
@@ -58,17 +52,14 @@ a:hover {
     color: orange;
 }
 
-
 .headerpart {
-    position: relative;
-    
+    position: relative;   
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* flex-wrap:wrap; */
     background-color: black;
     margin-top: 0;
     position: fixed;
@@ -76,19 +67,15 @@ a:hover {
     height: 4rem;
     padding-left: 20px;
     padding-right: 10px;
-    /* max-width:1200px; */
-
 }
 
 .navbar .logo a {
     font-size: 1.75rem;
     font-weight: bold;
 }
-
 .navbar .links {
     margin-right: 5%;
     display: flex;
-    /* justify-content:space-between; */
     gap: 2rem;
 }
 
@@ -143,7 +130,6 @@ a:hover {
     transform-origin: bottom left;
   
 }
-
 .headerpart .navbar ul li:hover::after {
     transform: scaleX(1);
 }
@@ -158,13 +144,10 @@ a:hover {
     padding-right: 5%;
 }
 .headerimage {
-    width: 350px;
-    height: 350px;
-    
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
 }
-
-
 
 /* =========================navigation================== */
 .header-text {
@@ -173,7 +156,6 @@ a:hover {
     padding-left: 5%;  
     margin-top: 0;
     font-size: 30px;
-    
 }
 
 .header-text h1 {
@@ -204,7 +186,6 @@ a:hover {
     opacity: 0;
     color: red;
     animation: fadeIn 3s forwards;
-    
 }
 
 @keyframes fadeIn {
@@ -236,8 +217,6 @@ a:hover {
 .sec-text span:nth-child(5) {
     animation-delay: 12s;
 }
-
-
 /* ============animation==== */
 
 /* =============================ABOUT=============================== */
@@ -265,13 +244,10 @@ a:hover {
 }
 
 .about-col-1 img {
-
     width: 260px;
     height: 300px;
     border-radius: 50%;
     border: 5px solid white;
-
-
 }
 
 .about-col-2 {
@@ -299,14 +275,12 @@ a:hover {
 .socialmedias {
     width: 20px;
     height: 30px;
-
 }
 
 /* =============================SKILL=============================== */
 #skill{
     background-color: #20232f;
     height: auto;
-    /* padding-bottom: 30px; */
 }
 #skill .title{
     margin-bottom: 25px;
@@ -394,7 +368,6 @@ a:hover {
     margin-top:20px;
     border-radius: 20px;
     transition: width 0.3s, height 0.3s;
-    /* align-items: flex-start; */
 }
 
 .desc a {
@@ -404,7 +377,6 @@ a:hover {
 
 .desc h4 {
     display: none;
-
 }
 
 .card:hover {
@@ -435,7 +407,6 @@ a:hover {
 .desc {
     display: flex;
     flex-direction: column;
-
 }
 
 .desc a {
@@ -443,27 +414,18 @@ a:hover {
     color: #4477CE;
     margin-top: 5px;
 }
-
-
 /* =============================Education=============================== */
 .education {
     padding: 15px;
     padding-bottom: 100px;
-    /* background-color: #9EC8B9; */
-
-
 }
-
-
 
 .edu-lists {
     display: flex;
-    /* flex-direction: row; */
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     margin-top: 30px;
-
 }
 
 .edu-container {
@@ -473,7 +435,6 @@ a:hover {
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     width: 270px;
     height: 25vh;
     margin-bottom: 10px;
@@ -523,7 +484,6 @@ a:hover {
 }
 
 #contact h2 {
-
     text-align: center;
 }
 
@@ -533,7 +493,6 @@ a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .getme {
@@ -566,12 +525,10 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 5px;
-
 }
 
 .sendme h3 {
     padding-bottom: 0px;
-    
 }
 
 input {
@@ -579,13 +536,11 @@ input {
     height: 30px;
     border-radius: 5px;
     padding-left: 5px;
-    
 }
 
 #inputmessage {
     height: 60px;
     padding-bottom: 20px;
-
 }
 
 button {
@@ -596,8 +551,6 @@ button {
     background-color: #002830;
     color: black;
 }
-
-
 
 /* ==================================================footer============================ */
 
@@ -615,13 +568,8 @@ button {
     width: 50%;
 }
 
-
-
-
-
 /* ============================MEDIA QUERY========================== */
 
- 
 @media screen and (max-width: 800px) {
     .header-text h1 {
         font-size: 45px;
@@ -629,7 +577,6 @@ button {
 
     .header-text p {
         font-size: 30px;
-
     }
 
     .about-container {
@@ -651,7 +598,6 @@ button {
 
     .edu-container {
         width: 440px;
-
     }
      .navbar .links {
         display: none;
@@ -664,9 +610,6 @@ button {
      .dropdown_menu {
         display: block;
     }
-
-    
-   
 } 
 
 @media (max-width:1082px) {
